@@ -1,4 +1,3 @@
-
 /*
 CSS FIREFOX TWEAKS
 https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#for-userchromecss
@@ -12,15 +11,15 @@ YOU CAN ACTUALLY SEE THE REST OF THE SIDE BARS DONT ASK ME WHY)
 /*(50, 50, 52)*/
 
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
-    display: none;
-  }
+  display: none;
+}
 
 /*
 Reduce width of sidebar
 */
 #sidebar {
-  min-width: 100px !important;
-  background-color:  rgb(255, 255, 255);
+min-width: 100px !important;
+background-color:  rgb(255, 255, 255);
 }
 
 /*
@@ -29,46 +28,51 @@ Hide horizontal tabs at the top of the window
 #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) 
 
 #TabsToolbar {
-  opacity: 0;
-  pointer-events: none;
-  visibility: collapse;
-  margin-bottom: -28px !important;
-  background-color:  rgb(50,50,52);
+opacity: 0;
+pointer-events: none;
+visibility: collapse;
+margin-bottom: -32px !important;
+background-color:  rgb(50,50,52);
 }
 
 /*somehow fixes the light colour beneath the close buttons*/
 
 :root:-moz-lwtheme {
-  --toolbox-border-bottom-color: rgba(0,0,0,.0) !important; 
+--toolbox-border-bottom-color: rgba(0,0,0,.0) !important; 
 }
 
 #main-window:not([tabsintitlebar="true"]) #TabsToolbar {
-    visibility: collapse !important;
+  visibility: collapse !important;
 }
 
 #TabsToolbar{ -moz-box-ordinal-group: 2}
 #TabsToolbar .titlebar-placeholder{display: none;}
 #toolbar-menubar{
-    height: -22px !important;
-    padding-top: 2px !important; 
-    padding-bottom: -1px !important;
-    background-color:  rgb(50,50,52); 
-  }
+  /*-moz-box-ordinal-group: 1000;*/
+  height: -23px !important;
+  margin-top: 2px !important;
+  padding-top: 0px !important; 
+  background-color:  rgb(50,50,52); 
+}
 
- 
 #nav-bar{ 
-    margin: -4px 144px 0px 0px; 
-    margin-top: -2px !important;
-    border-top: 0px !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    background-color:  rgb(50,50,52);
+  margin: -2px 144px 0px 0px; 
+  margin-top: 0px !important;
+  border-top: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  background-color:  rgb(50,50,52);
 
-    /*hides black bar on top of URL bar https://www.reddit.com/r/FirefoxCSS/comments/7u22o1/how_to_hide_black_line_between_title_bar_and_url/ */
-    border: none !important;
-    box-shadow: none !important; 
-  }
-    
+  /*hides black bar on top of URL bar https://www.reddit.com/r/FirefoxCSS/comments/7u22o1/how_to_hide_black_line_between_title_bar_and_url/ */
+  border: none !important;
+  box-shadow: none !important; 
+}
+/*adjusting the URL dropdown bar*/
+#PopupAutoCompleteRichResult {
+  margin-left: 30px !important;
+  max-width: 1250px !important;
+}
+  
 
 #navigator-toolbox{ background-color:  rgb(50,50,52)}
 
@@ -76,28 +80,28 @@ Hide horizontal tabs at the top of the window
 
 /* Margins for bookmarks toolbar at top of window*/
 #PersonalToolbar {
-  padding-right: 147px !important;
-  padding-bottom: 0px !important;
-  margin-top: 2px !important;
-  margin-bottom: 2px !important;
+padding-right: 149px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 2px !important;
 }
 
 
 
 /*#nav-bar {      
-  margin-bottom: -1px !important;
-  margin-top: -32px !important;
-  margin-right: 65vw !important; 
-  border-top: transparent !important;
+margin-bottom: -1px !important;
+margin-top: -32px !important;
+margin-right: 65vw !important; 
+border-top: transparent !important;
 }   
 #TabsToolbar {      
-  margin-bottom: -2px !important;
-  margin-top: 0px !important;
-  margin-left: 35vw !important;
-  margin-right: -34px !important;
-  padding-bottom: 0px !important;}
-  
-  */
-  /* Remove padding above tabbar in compact mode 
-  #main-window[sizemode="normal"] > #titlebar {
-  -moz-appearance: initial !important;}*/
+margin-bottom: -2px !important;
+margin-top: 0px !important;
+margin-left: 35vw !important;
+margin-right: -34px !important;
+padding-bottom: 0px !important;}
+
+*/
+/* Remove padding above tabbar in compact mode 
+#main-window[sizemode="normal"] > #titlebar {
+-moz-appearance: initial !important;}*/
