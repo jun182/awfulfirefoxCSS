@@ -1,16 +1,16 @@
 
 /*
-
 CSS FIREFOX TWEAKS
-
 https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#for-userchromecss
-
 */
 
 /* 
 Hide the "Tree Style Tab" header at the top of the sidebar (IF YOU COMMENT THIS SNIPPET OUT
 YOU CAN ACTUALLY SEE THE REST OF THE SIDE BARS DONT ASK ME WHY)
 */
+
+/*(50, 50, 52)*/
+
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
     display: none;
   }
@@ -20,7 +20,7 @@ Reduce width of sidebar
 */
 #sidebar {
   min-width: 100px !important;
-  background-color:  rgb(50,50,52)
+  background-color:  rgb(255, 255, 255);
 }
 
 /*
@@ -32,11 +32,8 @@ Hide horizontal tabs at the top of the window
   opacity: 0;
   pointer-events: none;
   visibility: collapse;
-  margin-bottom: -29px !important;
-}
-
-#titlebar {
- /* display: none;*/
+  margin-bottom: -28px !important;
+  background-color:  rgb(50,50,52);
 }
 
 #main-window:not([tabsintitlebar="true"]) #TabsToolbar {
@@ -45,16 +42,33 @@ Hide horizontal tabs at the top of the window
 
 #TabsToolbar{ -moz-box-ordinal-group: 2}
 #TabsToolbar .titlebar-placeholder{display: none;}
-#toolbar-menubar{height: -24px !important; padding-top: 2px !important; padding-bottom: -1px !important;}
+#toolbar-menubar{
+    height: -22px !important;
+    padding-top: 2px !important; 
+    padding-bottom: -1px !important;
+    background-color:  rgb(50,50,52); 
+  }
+
+ 
 #nav-bar{ 
-    margin: 0px 144px 0px 0px; 
+    margin: -4px 144px 0px 0px; 
+    margin-top: -2px !important;
     border-top: 0px !important;
-    padding-bottom: 0px;}
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    background-color:  rgb(50,50,52);
+
+    /*hides black bar on top of URL bar https://www.reddit.com/r/FirefoxCSS/comments/7u22o1/how_to_hide_black_line_between_title_bar_and_url/ */
+    border: none !important;
+    box-shadow: none !important; 
+  }
+    
 
 #navigator-toolbox{ background-color:  rgb(50,50,52)}
 
 /* Use Normal top and bottom padding for Compact */
 
+/* Margins for bookmarks toolbar at top of window*/
 #PersonalToolbar {
   padding-right: 147px !important;
   padding-bottom: 0px !important;
@@ -70,7 +84,6 @@ Hide horizontal tabs at the top of the window
   margin-right: 65vw !important; 
   border-top: transparent !important;
 }   
-
 #TabsToolbar {      
   margin-bottom: -2px !important;
   margin-top: 0px !important;
