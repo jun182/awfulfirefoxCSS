@@ -10,6 +10,10 @@ first version i didnt write anything i copy paste google ok
 
 second version fixed the god damn vertical line it was a god damn drop shadow
 
+2018-02-13 1157
+
+third version adjusted size of url dropdown 
+
 https://www.reddit.com/r/FirefoxCSS/comments/7u22o1/how_to_hide_black_line_between_title_bar_and_url/
 
 thanks reddit for giving me solution
