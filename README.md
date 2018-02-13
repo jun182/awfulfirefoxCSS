@@ -16,5 +16,5 @@ thanks reddit for giving me solution
 
 # current bugs
 
-    <del>at the top of the url bar theres a vertical line a pixel thick thats a different colour</del>
+    ~~at the top of the url bar theres a vertical line a pixel thick thats a different colour~~
     fixed 2018-02-13 1452
