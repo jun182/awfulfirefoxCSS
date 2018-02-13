@@ -36,6 +36,12 @@ Hide horizontal tabs at the top of the window
   background-color:  rgb(50,50,52);
 }
 
+/*somehow fixes the light colour beneath the close buttons*/
+
+:root:-moz-lwtheme {
+  --toolbox-border-bottom-color: rgba(0,0,0,.0) !important; 
+}
+
 #main-window:not([tabsintitlebar="true"]) #TabsToolbar {
     visibility: collapse !important;
 }
