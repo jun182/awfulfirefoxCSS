@@ -14,7 +14,7 @@ https://www.reddit.com/r/FirefoxCSS/comments/7u22o1/how_to_hide_black_line_betwe
 
 thanks reddit for giving me solution
 
-** current bugs **
+# current bugs
 
-    ~~at the top of the url bar theres a vertical line a pixel thick thats a different colour~~
-    fixed 2018-02-13 1452
+   ~~at the top of the url bar theres a vertical line a pixel thick thats a different colour~~
+   fixed 2018-02-13 1452
