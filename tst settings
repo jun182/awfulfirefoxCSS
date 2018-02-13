@@ -1,0 +1,47 @@
+shamelessly stolen from https://www.reddit.com/r/FirefoxCSS/comments/7e8x3y/tree_style_tab_flat_dark_theme_vertical/
+
+
+/* Show title of unread tabs with red and italic font */
+
+.tab.unread .label {
+  color: red !important;
+  font-style: italic !important;
+}
+
+
+:root     { background-color: #101010; --tabbar-bg: #222426; }
+#tabbar   { border-color: #101010; bottom: 18px !important; }
+
+.tab.pinned                                         { margin-top: 1px; background-image: none !important; }
+.tab.pinned.last-row                                { border-bottom-width: 1px; }
+.tab.pinned.contextual-identity-marker              { height: 3px; }
+.tab:not(.pinned) .contextual-identity-marker       { width: 5px !important; }
+
+.tab:not(:hover) .closebox   { display: none; }
+
+.tab                         { background-color: #323234; color: #FFFFFF; border-color: #101010; }
+.tab:hover                   { background-color: #505060 !important; color: #FFFFFF !important; }
+
+.tab.discarded               { background-color: #202020; color: #606060 !important; }
+.tab.discarded:hover         { background-color: #343444!important; }
+
+.tab.active                  { background-color: #607080; }
+.tab.active:hover            { background-color: #8090A0 !important; }
+
+.tab.private-browsing              { background-color: #504050; }
+.tab.private-browsing.active       { background-color: #706070; }
+.tab.private-browsing:hover        { background-color: #7050A0 !important; }
+.tab.private-browsing.active:hover { background-color: #9060B0 !important; }
+
+.after-tabs button           { background-color: #323234; color: #808080; border-color: #101010; }
+.after-tabs button:hover     { background-color: #505060 !important; color: #FFFFFF !important; }
+
+
+*/
+
+/* Add private browsing indicator per tab */
+/*
+.tab.private-browsing .label:before {
+  content: "🕶";
+}
+*/
