@@ -1,0 +1,84 @@
+
+/*
+
+CSS FIREFOX TWEAKS
+
+https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#for-userchromecss
+
+*/
+
+/* 
+Hide the "Tree Style Tab" header at the top of the sidebar (IF YOU COMMENT THIS SNIPPET OUT
+YOU CAN ACTUALLY SEE THE REST OF THE SIDE BARS DONT ASK ME WHY)
+*/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    display: none;
+  }
+
+/*
+Reduce width of sidebar
+*/
+#sidebar {
+  min-width: 100px !important;
+  background-color:  rgb(50,50,52)
+}
+
+/*
+Hide horizontal tabs at the top of the window
+*/
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) 
+
+#TabsToolbar {
+  opacity: 0;
+  pointer-events: none;
+  visibility: collapse;
+  margin-bottom: -29px !important;
+}
+
+#titlebar {
+ /* display: none;*/
+}
+
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
+#TabsToolbar{ -moz-box-ordinal-group: 2}
+#TabsToolbar .titlebar-placeholder{display: none;}
+#toolbar-menubar{height: -24px !important; padding-top: 2px !important; padding-bottom: -1px !important;}
+#nav-bar{ 
+    margin: 0px 144px 0px 0px; 
+    border-top: 0px !important;
+    padding-bottom: 0px;}
+
+#navigator-toolbox{ background-color:  rgb(50,50,52)}
+
+/* Use Normal top and bottom padding for Compact */
+
+#PersonalToolbar {
+  padding-right: 147px !important;
+  padding-bottom: 0px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+
+
+/*#nav-bar {      
+  margin-bottom: -1px !important;
+  margin-top: -32px !important;
+  margin-right: 65vw !important; 
+  border-top: transparent !important;
+}   
+
+#TabsToolbar {      
+  margin-bottom: -2px !important;
+  margin-top: 0px !important;
+  margin-left: 35vw !important;
+  margin-right: -34px !important;
+  padding-bottom: 0px !important;}
+  
+  */
+  /* Remove padding above tabbar in compact mode 
+  #main-window[sizemode="normal"] > #titlebar {
+  -moz-appearance: initial !important;}*/
