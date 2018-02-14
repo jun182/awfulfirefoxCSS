@@ -18,6 +18,15 @@ https://www.reddit.com/r/FirefoxCSS/comments/7u22o1/how_to_hide_black_line_betwe
 
 thanks reddit for giving me solution
 
+2018-02-14 0202
+
+fourth version, stole expanding sidebar when hovering from /u/TanzNukeTerror via https://www.reddit.com/r/FirefoxCSS/comments/7emhsq/my_compact_treestyletab_css_and_sidebar_hover/
+
+also hid the splitter that was white with 
+      #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
+      display: none !important;
+      }
+
 # current bugs
 
    ~~at the top of the url bar theres a vertical line a pixel thick thats a different colour~~
