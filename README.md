@@ -32,3 +32,5 @@ also hid the splitter that was white with
 
    ~~at the top of the url bar theres a vertical line a pixel thick thats a different colour~~
    fixed 2018-02-13 1452
+   
+   minimize/maximize/exit jumps up a few pixels when toggling menu bar with alt, pretty low prio
