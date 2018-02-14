@@ -23,6 +23,7 @@ thanks reddit for giving me solution
 fourth version, stole expanding sidebar when hovering from /u/TanzNukeTerror via https://www.reddit.com/r/FirefoxCSS/comments/7emhsq/my_compact_treestyletab_css_and_sidebar_hover/
 
 also hid the splitter that was white with 
+
       #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
       display: none !important;
       }
